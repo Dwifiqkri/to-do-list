@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi To Do List</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HOME -->
+  <div id="home" class="page active">
+
+    <h1>Aplikasi To Do List</h1>
+
+    <button onclick="showPage('tambah')">
+      Mulai
+    </button>
+
+  </div>
+
+  <!-- TAMBAH TUGAS -->
+  <div id="tambah" class="page">
+
+    <h2>Tambah Tugas</h2>
+
+    <input
+      type="text"
+      id="mapelInput"
+      placeholder="Masukkan Mata Pelajaran"
+    >
+
+    <input
+      type="text"
+      id="tugasInput"
+      placeholder="Masukkan Keterangan Tugas"
+    >
+
+    <input
+      type="date"
+      id="deadlineInput"
+    >
+
+    <button onclick="addTask()">
+      Tambah Tugas
+    </button>
+
+    <button onclick="showPage('daftar')">
+      Lihat Daftar
+    </button>
+
+  </div>
+
+  <!-- DAFTAR TUGAS -->
+  <div id="daftar" class="page">
+
+    <h2>Daftar Tugas</h2>
+
+    <ul id="taskList"></ul>
+
+    <button onclick="showPage('detail')">
+      Detail
+    </button>
+
+  </div>
+
+  <!-- DETAIL -->
+  <div id="detail" class="page">
+
+    <h2>Detail Tugas</h2>
+
+    <p id="taskDetail"></p>
+
+    <button onclick="showPage('selesai')">
+      Selesai
+    </button>
+
+  </div>
+
+  <!-- SELESAI -->
+  <div id="selesai" class="page">
+
+    <h2>Tugas Berhasil Disimpan</h2>
+
+    <button onclick="showPage('home')">
+      Kembali Home
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
