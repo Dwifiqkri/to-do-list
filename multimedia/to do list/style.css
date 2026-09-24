@@ -1,0 +1,597 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+
+body{
+
+    background:#f8faff;
+    min-height:100vh;
+
+}
+
+
+
+/* SIDEBAR */
+
+.sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:205px;
+    height:100vh;
+
+    background:linear-gradient(180deg,#2448e7,#1c37c8);
+
+    color:white;
+
+    padding:40px 18px;
+
+}
+
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+
+    gap:10px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.logo i{
+
+    font-size:28px;
+
+}
+
+
+
+
+.menu{
+
+    list-style:none;
+
+}
+
+
+
+.menu li{
+
+    margin-bottom:18px;
+
+}
+
+
+
+.menu li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+
+    text-decoration:none;
+
+    color:white;
+
+
+    padding:16px 14px;
+
+
+    border-radius:14px;
+
+
+    transition:0.3s;
+
+}
+
+
+
+.menu li a:hover{
+
+    background:rgba(255,255,255,0.15);
+
+}
+
+
+
+.menu li.active a{
+
+    background:rgba(255,255,255,0.18);
+
+}
+
+
+
+/* HOME */
+
+.home-container{
+
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+}
+
+
+
+.hero{
+
+
+    text-align:center;
+
+
+}
+
+
+
+.home-icon{
+
+    font-size:70px;
+
+    color:#2448e7;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.hero h2{
+
+    color:#1f2d63;
+
+    font-size:26px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero h1{
+
+
+    color:#2448e7;
+
+    font-size:72px;
+
+    font-weight:800;
+
+
+}
+
+
+
+.line{
+
+
+    width:60px;
+
+    height:5px;
+
+    background:#2448e7;
+
+
+    margin:20px auto;
+
+
+    border-radius:10px;
+
+}
+
+
+
+.hero p{
+
+    color:#24304d;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+.start-btn{
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    gap:15px;
+
+
+    text-decoration:none;
+
+
+    color:white;
+
+
+    background:#2448e7;
+
+
+    padding:15px 30px;
+
+
+    border-radius:10px;
+
+
+    font-size:18px;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+.start-btn:hover{
+
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+/* CONTENT */
+
+
+.content{
+
+
+    margin-left:240px;
+
+    padding:40px;
+
+
+}
+
+
+
+
+
+.card{
+
+
+    background:white;
+
+
+    padding:30px;
+
+
+    border-radius:15px;
+
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+
+}
+
+
+
+/* FORM */
+
+
+.form-group{
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.form-group label{
+
+
+    display:block;
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+.form-group input,
+
+.form-group textarea,
+
+.form-group select{
+
+
+    width:100%;
+
+
+    padding:12px;
+
+
+    border:1px solid #ccc;
+
+
+    border-radius:8px;
+
+
+}
+
+
+
+.form-group textarea{
+
+
+    height:120px;
+
+
+    resize:none;
+
+
+}
+
+
+
+
+/* BUTTON */
+
+
+.btn{
+
+
+    background:#2448e7;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    padding:12px 20px;
+
+
+    border-radius:8px;
+
+
+    cursor:pointer;
+
+
+    text-decoration:none;
+
+
+    display:inline-block;
+
+
+}
+
+
+
+.btn.edit{
+
+
+    background:#16a34a;
+
+}
+
+
+
+.btn:hover{
+
+    opacity:0.85;
+
+}
+
+
+
+/* TABLE */
+
+
+table{
+
+
+    width:100%;
+
+
+    border-collapse:collapse;
+
+
+}
+
+
+
+table th,
+
+table td{
+
+
+    border:1px solid #ddd;
+
+
+    padding:12px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+table th{
+
+
+    background:#2448e7;
+
+
+    color:white;
+
+
+}
+
+
+
+
+/* STATUS */
+
+
+.status{
+
+
+    padding:6px 12px;
+
+
+    border-radius:20px;
+
+
+    background:#facc15;
+
+
+}
+
+
+
+.status.done{
+
+
+    background:#22c55e;
+
+
+    color:white;
+
+
+}
+
+
+
+/* SUCCESS */
+
+
+.success-box{
+
+
+    background:white;
+
+
+    padding:40px;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+.success-icon{
+
+
+    font-size:80px;
+
+
+    color:#22c55e;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.button-group{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.btn-outline{
+
+
+    border:2px solid #2448e7;
+
+
+    color:#2448e7;
+
+
+    padding:12px 20px;
+
+
+    border-radius:10px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+.btn-primary{
+
+
+    background:#2448e7;
+
+
+    color:white;
+
+
+    padding:12px 20px;
+
+
+    border-radius:10px;
+
+
+    text-decoration:none;
+
+
+}

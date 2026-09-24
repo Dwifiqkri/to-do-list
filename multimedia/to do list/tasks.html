@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daftar Tugas</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<i class="fa-solid fa-clipboard-check"></i>
+
+<span>To Do List</span>
+
+</div>
+
+
+
+
+<ul class="menu">
+
+
+<li>
+
+<a href="index.html">
+
+<i class="fa-solid fa-house"></i>
+
+Home
+
+</a>
+
+</li>
+
+
+
+
+<li class="active">
+
+<a href="tasks.html">
+
+<i class="fa-regular fa-clipboard"></i>
+
+Daftar Tugas
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="add-task.html">
+
+<i class="fa-solid fa-circle-plus"></i>
+
+Tambah Tugas
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="detail.html">
+
+<i class="fa-solid fa-circle-info"></i>
+
+Detail Tugas
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="content">
+
+
+<div class="card">
+
+
+
+<h1 style="margin-bottom:20px;">
+
+Daftar Tugas
+
+</h1>
+
+
+
+
+<a href="add-task.html" class="btn">
+
++ Tambah Tugas
+
+</a>
+
+
+
+
+<br><br>
+
+
+
+
+
+<div class="filter">
+
+
+<button onclick="filterTask('Semua')" class="btn">
+
+Semua
+
+</button>
+
+
+
+<button onclick="filterTask('Belum Selesai')" class="btn">
+
+Belum Selesai
+
+</button>
+
+
+
+<button onclick="filterTask('Selesai')" class="btn">
+
+Selesai
+
+</button>
+
+
+</div>
+
+
+
+
+
+<br>
+
+
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>No</th>
+
+
+<th>Mata Pelajaran</th>
+
+
+<th>Deadline</th>
+
+
+<th>Status</th>
+
+
+<th>Aksi</th>
+
+
+
+</tr>
+
+
+
+</thead>
+
+
+
+<tbody id="taskTable">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+<script>
+
+
+function filterTask(status){
+
+
+
+let rows =
+document.querySelectorAll("#taskTable tr");
+
+
+
+rows.forEach(row=>{
+
+
+
+if(status=="Semua"){
+
+row.style.display="";
+
+}
+
+
+
+else{
+
+
+let text=row.innerText;
+
+
+
+if(text.includes(status)){
+
+row.style.display="";
+
+}
+
+else{
+
+row.style.display="none";
+
+}
+
+
+}
+
+
+});
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
