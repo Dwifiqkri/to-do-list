@@ -595,3 +595,20 @@ table th{
 
 
 }
+
+/* CSS lama kamu */
+* {
+    ...
+}
+
+.sidebar {
+    ...
+}
+
+/* dan seterusnya */
+
+
+/* TAMBAHAN RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+    ...
+}
