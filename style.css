@@ -202,6 +202,8 @@ body{
 
     border-radius:10px;
 
+
+
 }
 
 
@@ -417,6 +419,7 @@ body{
 
 
 
+
 /* TABLE */
 
 
@@ -494,6 +497,7 @@ table th{
 
 
 }
+
 
 
 
@@ -596,19 +600,448 @@ table th{
 
 }
 
-/* CSS lama kamu */
-* {
-    ...
+
+
+/* ===================================================== */
+/* RESPONSIVE MOBILE */
+/* ===================================================== */
+
+@media (max-width:768px){
+
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
+
+
+    /* SIDEBAR */
+
+    .sidebar{
+
+        position:relative;
+
+        left:auto;
+        top:auto;
+
+        width:100%;
+        height:auto;
+
+        padding:20px 15px;
+
+    }
+
+
+    .logo{
+
+        justify-content:center;
+
+        margin-bottom:20px;
+
+        font-size:18px;
+
+    }
+
+
+    .logo i{
+
+        font-size:25px;
+
+    }
+
+
+    .menu{
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        flex-wrap:wrap;
+
+        gap:8px;
+
+    }
+
+
+    .menu li{
+
+        margin-bottom:0;
+
+    }
+
+
+    .menu li a{
+
+        padding:10px 12px;
+
+        border-radius:10px;
+
+        gap:7px;
+
+        font-size:14px;
+
+    }
+
+
+
+    /* CONTENT */
+
+    .content{
+
+        margin-left:0;
+
+        width:100%;
+
+        padding:20px 15px;
+
+    }
+
+
+    .card{
+
+        width:100%;
+
+        padding:20px 15px;
+
+        border-radius:12px;
+
+    }
+
+
+
+    /* HOME */
+
+    .home-container{
+
+        min-height:calc(100vh - 120px);
+
+        height:auto;
+
+        width:100%;
+
+        padding:30px 20px;
+
+    }
+
+
+    .hero{
+
+        width:100%;
+
+        max-width:500px;
+
+    }
+
+
+    .home-icon{
+
+        font-size:55px;
+
+        margin-bottom:15px;
+
+    }
+
+
+    .hero h2{
+
+        font-size:21px;
+
+        margin-bottom:15px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:45px;
+
+        line-height:1.1;
+
+        word-break:break-word;
+
+    }
+
+
+    .line{
+
+        width:50px;
+
+        height:4px;
+
+        margin:15px auto;
+
+    }
+
+
+    .hero p{
+
+        font-size:15px;
+
+        line-height:1.6;
+
+        margin-bottom:25px;
+
+    }
+
+
+    .start-btn{
+
+        padding:13px 22px;
+
+        font-size:16px;
+
+        gap:10px;
+
+    }
+
+
+
+    /* FORM */
+
+    .form-group{
+
+        margin-bottom:16px;
+
+    }
+
+
+    .form-group label{
+
+        font-size:15px;
+
+        margin-bottom:7px;
+
+    }
+
+
+    .form-group input,
+
+    .form-group textarea,
+
+    .form-group select{
+
+        width:100%;
+
+        font-size:16px;
+
+        padding:12px;
+
+    }
+
+
+    .form-group textarea{
+
+        height:110px;
+
+    }
+
+
+
+    /* BUTTON */
+
+    .btn{
+
+        width:100%;
+
+        text-align:center;
+
+        padding:12px 15px;
+
+    }
+
+
+
+    /* TABLE */
+
+    table{
+
+        width:100%;
+
+        min-width:600px;
+
+    }
+
+
+    .card{
+
+        overflow-x:auto;
+
+    }
+
+
+    table th,
+
+    table td{
+
+        padding:10px 8px;
+
+        font-size:13px;
+
+        white-space:nowrap;
+
+    }
+
+
+    .status{
+
+        padding:5px 9px;
+
+        font-size:12px;
+
+        white-space:nowrap;
+
+    }
+
+
+
+    /* SUCCESS */
+
+    .success-box{
+
+        width:100%;
+
+        padding:30px 20px;
+
+    }
+
+
+    .success-icon{
+
+        font-size:65px;
+
+        margin-bottom:15px;
+
+    }
+
+
+    .button-group{
+
+        flex-direction:column;
+
+        gap:10px;
+
+        width:100%;
+
+    }
+
+
+    .btn-outline,
+
+    .btn-primary{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
 }
 
-.sidebar {
-    ...
-}
-
-/* dan seterusnya */
 
 
-/* TAMBAHAN RESPONSIVE MOBILE */
-@media (max-width: 768px) {
-    ...
+/* ===================================================== */
+/* RESPONSIVE MOBILE KECIL */
+/* ===================================================== */
+
+@media (max-width:480px){
+
+    .sidebar{
+
+        padding:16px 10px;
+
+    }
+
+
+    .logo{
+
+        font-size:16px;
+
+        margin-bottom:15px;
+
+    }
+
+
+    .logo i{
+
+        font-size:22px;
+
+    }
+
+
+    .menu{
+
+        gap:5px;
+
+    }
+
+
+    .menu li a{
+
+        padding:9px 10px;
+
+        font-size:13px;
+
+        gap:5px;
+
+    }
+
+
+    .content{
+
+        padding:15px 10px;
+
+    }
+
+
+    .card{
+
+        padding:18px 12px;
+
+    }
+
+
+    .hero h2{
+
+        font-size:19px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+
+    .hero p{
+
+        font-size:14px;
+
+    }
+
+
+    .home-icon{
+
+        font-size:48px;
+
+    }
+
+
+    .start-btn{
+
+        font-size:15px;
+
+        padding:12px 18px;
+
+    }
+
+
+    .success-box{
+
+        padding:25px 15px;
+
+    }
+
 }
